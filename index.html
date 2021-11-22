@@ -12,17 +12,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container text-center">
-        <h1>Mini Lightbox</h1>
+    <div class="container">
+        <h1 class="text-center">Battlefield 2042</h1>
         <hr>
-        <img id="first-image" class="img-thumbnail" src="./images/full.png" alt="">
+        <img id="first-image" class="img-thumbnail" src="./images/full.jpeg" alt="">
     </div>
     <hr>
     <div class="swiffy-slider">
         <ul class="slider-container">
-            <li><img src="https://source.unsplash.com/49b9l_29ceA/1600x900" style="max-width: 100%;height: auto;"></li>
-            <li><img src="https://source.unsplash.com/nKAglN6HBH8/1600x900" style="max-width: 100%;height: auto;"></li>
-            <li><img src="https://source.unsplash.com/E9ZwWcMGzj8/1600x900" style="max-width: 100%;height: auto;"></li>
+            <li><img src="./images/battlefield-2042-2.jpg" style="max-width: 100%;height: auto;"></li>
+            <li><img src="./images/battlefield-2042-early-access-1140x641.jpg" style="max-width: 100%;height: auto;"></li>
+            <li><img src="./images/beta-changes-battlefield-2042-1000x600.jpg" style="max-width: 100%;height: auto;"></li>
         </ul>
     
         <button type="button" class="slider-nav"></button>
@@ -37,7 +37,7 @@
     <hr>
     <div id="mapa" style="width:600px; height:400px;"></div>
 	<script type="text/javascript">
-		var stred = SMap.Coords.fromWGS84(14.41, 50.08);
+		var stred = SMap.Coords.fromWGS84(18.0710933, 59.3251172);
 		var mapa = new SMap(JAK.gel("mapa"), stred, 10);
 		mapa.addDefaultLayer(SMap.DEF_BASE).enable();
 		mapa.addDefaultControls();	      	      
@@ -49,10 +49,10 @@
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['19.11', '20.11', '21.11'],
                 datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
+                    label: 'Návštěvnost',
+                    data: [100000, 300000, 1000000],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
